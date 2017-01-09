@@ -8,3 +8,7 @@
 	同时它也会用NIWSDiscoveryPing来取代IPing，它将职责委托给Eureka来确定服务端是否已经启动。
 	
 使用ribbon实现对compute_service访问的负载均衡
+
+
+##############2016-01-09#####################
+引入断路器，依赖的compute-service发生故障后，向调用方返回一个错误响应。
